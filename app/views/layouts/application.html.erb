@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StartLineHp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <header class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <nav class='nav navbar-nav navbar-left' >
+          <span>Start Line</span>
+        </nav>
+        <nav>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="glyphicon glyphicon-home home",<%= link_to 'home', "/" %> ></a></li>
+                <li><a class="glyphicon glyphicon-link about" href ="/home/about">About</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class='body'>
+      <div id="container">
+        <div id="theTarget">
+          <div class="image1"></div>
+          <div class="image2"></div>
+          <div class="image3"></div>
+          <div class="image4"></div>
+          <div class="image5"></div>
+        </div>
+      </div>
+
+      <div class='container'>
+        <p id="notice">
+          <%=  notice %>
+        </p>
+        <%= yield %>
+      </div>
+    </div>
+
+    <span id="back">
+      <a href="#">
+        <div class="arrow"></div>
+      </a>
+    </span>
+
+    <footer>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-xs-3 col-xs-offset-9'>
+            <p>CopyRight Start Line</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -51,16 +51,15 @@ background-image: url(image5.jpg);
 }
 
 
+/* page rollup */
 #back {
   position: fixed;
   right: 20px;
-  bottom: 20px;
-}
-#back img {
+  bottom: 30px;
   width: 50px;
-}
-.arrow {
-background-image: url(arrow.png);
+  height:50px;
+  background-image: url(arrow.png);
+  background-size:contain;
 }
 
 
